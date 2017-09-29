@@ -230,7 +230,6 @@ var PostsComponent = (function () {
         // Retrieve posts from the API
         this.postsService.getAllPosts().subscribe(function (coins) {
             _this.coins = coins;
-            console.log(_this.coins);
         });
     };
     return PostsComponent;
