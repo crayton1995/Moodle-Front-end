@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Coin Name</th>
+          <th>Market Cap</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let coin of coins">
+          <th scope="row">{{coin.rank}}</th>
+          <td>{{coin.name}}</td>
+          <td>${{coin.market_cap_usd}}</td>
+          <td>{{coin.price_usd}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
